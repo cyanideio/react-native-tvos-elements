@@ -1,2 +1,2 @@
-export { default as tvOSButton } from './button'
-export { default as icon } from './icon'
+export { default as TvOSButton } from './button';
+export { default as Icon } from './icon';

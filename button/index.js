@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
 import Icon from '../icon';
-import { btnParallax } '../style';
+import { btnParallax } from '../style';
 import tvStyle from './index.style';
 import { flexAlign } from '../utils';
 
