@@ -1,15 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
-
-const deviceWidth = Dimensions.get('window').width
-const deviceHeight = Dimensions.get('window').height
-
-export const btnParallax = {
-    magnification: 1.05,
-    pressDuration: 0.3,
-    shiftDistanceX: 0,
-    shiftDistanceY: 2.0,
-    tiltAngle: 0,
-};
+import { deviceHeight, deviceWidth } from '../style';
 
 export default StyleSheet.create({
     Btn: {
@@ -42,11 +32,6 @@ export default StyleSheet.create({
     },
     BtnTxtUnfocused: {
         color: 'white'
-    },
-    BtnIcon: {
-        position: 'absolute',
-        fontSize: 35,
-        color: 'gray' 
-    },
+    }
 });
 

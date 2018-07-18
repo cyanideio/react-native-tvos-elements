@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -9,6 +10,9 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Zocial from 'react-native-vector-icons/Zocial';
+
+import btnIconStyle from './index.style';
+import { absoluteAlign } from '../utils';
 
 export default class Icon extends Component<Props> {
     render() {
@@ -30,7 +34,7 @@ export default class Icon extends Component<Props> {
         var SpecificIcon = iconMap[iconType];
         return  (
             <SpecificIcon style={[
-                tvStyle.BtnIcon,
+                btnIconStyle.BtnIcon,
                 absoluteAlign(iconAlign), 
                 iconStyle,
             ]} 

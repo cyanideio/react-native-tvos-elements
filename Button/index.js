@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableHighlight, StyleSheet } from 'react-native';
-import tvStyle, { btnParallax } from './index.style';
+import tvStyle from './index.style';
+import { flexAlign } from '../utils';
+import { btnParallax } '../style';
 
 export default class TvOSButton extends Component<Props> {
     state = { focused: false }
-
     render() {
         const { 
             title, 
