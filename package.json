@@ -4,7 +4,8 @@
   "description": "React Native Elements for tvOS",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest"
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "NODE_ENV=test jest --coverage"
   },
   "repository": {
     "type": "git",

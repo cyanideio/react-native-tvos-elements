@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Component should render without issues 1`] = `
+<Icon
+  allowFontScaling={false}
+  name="ios-person"
+  size={12}
+  style={
+    Array [
+      Object {
+        "color": "gray",
+        "fontSize": 35,
+        "position": "absolute",
+      },
+      Object {
+        "right": 15,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
