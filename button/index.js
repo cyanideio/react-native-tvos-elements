@@ -19,12 +19,13 @@ export default class TvOSButton extends Component<Props> {
             txtStyleFocused,
             txtStyleUnfocused,
             iconStyle,
+            onPress,
         } = this.props;
 
         return (
             <View>
                 <TouchableHighlight
-                    onPress={() => {}}
+                    onPress={onPress}
                     underlayColor='transparent'
                     tvParallaxProperties={btnParallax}
                     onShowUnderlay={() => {this.setState({focused: true})}}
