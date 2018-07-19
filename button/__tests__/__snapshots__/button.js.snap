@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TvOSButton Component should render: <custom text style> 1`] = `
+<View>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    delayPressOut={100}
+    onHideUnderlay={[Function]}
+    onPress={[Function]}
+    onShowUnderlay={[Function]}
+    tvParallaxProperties={
+      Object {
+        "magnification": 1.05,
+        "pressDuration": 0.3,
+        "shiftDistanceX": 0,
+        "shiftDistanceY": 2,
+        "tiltAngle": 0,
+      }
+    }
+    underlayColor="transparent"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 5,
+            "height": 74.11111111111111,
+            "justifyContent": "center",
+            "marginBottom": 15,
+            "width": 250,
+          },
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "backgroundColor": "rgba(255,255,255,0.1)",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 30,
+              "marginLeft": 15,
+              "marginRight": 15,
+            },
+            Object {
+              "color": "white",
+            },
+            Object {
+              "color": "black",
+            },
+          ]
+        }
+      >
+        Settings
+      </Text>
+      <Icon />
+    </View>
+  </TouchableHighlight>
+</View>
+`;
+
+exports[`TvOSButton Component should render: <icon left> 1`] = `
+<View>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    delayPressOut={100}
+    onHideUnderlay={[Function]}
+    onPress={[Function]}
+    onShowUnderlay={[Function]}
+    tvParallaxProperties={
+      Object {
+        "magnification": 1.05,
+        "pressDuration": 0.3,
+        "shiftDistanceX": 0,
+        "shiftDistanceY": 2,
+        "tiltAngle": 0,
+      }
+    }
+    underlayColor="transparent"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 5,
+            "height": 74.11111111111111,
+            "justifyContent": "center",
+            "marginBottom": 15,
+            "width": 250,
+          },
+          Object {
+            "alignItems": "flex-start",
+          },
+          Object {
+            "backgroundColor": "rgba(255,255,255,0.1)",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 30,
+              "marginLeft": 15,
+              "marginRight": 15,
+            },
+            Object {
+              "color": "white",
+            },
+            undefined,
+          ]
+        }
+      >
+        Steam
+      </Text>
+      <Icon
+        iconName="ios-person"
+        iconType="Ionicons"
+      />
+    </View>
+  </TouchableHighlight>
+</View>
+`;
+
+exports[`TvOSButton Component should render: <title only> 1`] = `
+<View>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    delayPressOut={100}
+    onHideUnderlay={[Function]}
+    onPress={[Function]}
+    onShowUnderlay={[Function]}
+    tvParallaxProperties={
+      Object {
+        "magnification": 1.05,
+        "pressDuration": 0.3,
+        "shiftDistanceX": 0,
+        "shiftDistanceY": 2,
+        "tiltAngle": 0,
+      }
+    }
+    underlayColor="transparent"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 5,
+            "height": 74.11111111111111,
+            "justifyContent": "center",
+            "marginBottom": 15,
+            "width": 250,
+          },
+          Object {
+            "alignItems": "center",
+          },
+          Object {
+            "backgroundColor": "rgba(255,255,255,0.1)",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 30,
+              "marginLeft": 15,
+              "marginRight": 15,
+            },
+            Object {
+              "color": "white",
+            },
+            undefined,
+          ]
+        }
+      >
+        bitcoin
+      </Text>
+      <Icon />
+    </View>
+  </TouchableHighlight>
+</View>
+`;

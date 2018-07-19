@@ -4,7 +4,9 @@
   "description": "React Native Elements for tvOS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "test:collectCoverage": "NODE_ENV=test jest --coverage && ./node_modules/codecov/bin/codecov -t $code_cov_token"
   },
   "repository": {
     "type": "git",
@@ -19,17 +21,42 @@
     "icons"
   ],
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "codecov": "^3.0.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.4.1",
     "react": "16.2.0",
+    "react-dom": "^16.4.1",
     "react-native": "0.52.2",
-    "react-native-vector-icons": "^4.4.2"
+    "react-native-vector-icons": "^4.4.2",
+    "react-test-renderer": "^16.4.1"
   },
   "peerDependencies": {
     "react-native-vector-icons": "^4.4.2"
   },
   "author": "knarfytrebil",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/knarfytrebil/react-native-tvos-elements/issues"
   },
-  "homepage": "https://github.com/knarfytrebil/react-native-tvos-elements#readme"
+  "homepage": "https://github.com/knarfytrebil/react-native-tvos-elements#readme",
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
 }
