@@ -32,6 +32,18 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
         
       # run tests!
       - run: yarn run test:collectCoverage 
+      - run:
+          name: publish to npm
+          command: |
+              if [ "$CIRCLE_BRANCH" == "master" ];
+              then
+                echo "//registry.npmjs.org/:_authToken=$publish_token" > ~/repo/.npmrc;
+                npm publish 
+              fi
