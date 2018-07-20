@@ -9,6 +9,7 @@ describe('TvOSButton Component', () => {
         expect(component.length).toBe(1);
         expect(toJson(component)).toMatchSnapshot();
     });
+
     it('should render: <icon left>', () => {
         const component = shallow(<TvOSButton 
             txtStyleFocused={{color:'green'}}
@@ -28,4 +29,16 @@ describe('TvOSButton Component', () => {
         expect(component.length).toBe(1);
         expect(toJson(component)).toMatchSnapshot();
     });
+
+    it('should have onPress event', () => {
+        const onPress = jest.fn();
+        const component = shallow(<TvOSButton
+            txtStyleFocused={{color:'red'}}
+            txtStyleUnfocused={{color:'black'}}
+            onPress={onPress}
+            title='press' />);
+        expect(component.length).toBe(1);
+        expect(toJson(component)).toMatchSnapshot();
+    });
+
 });

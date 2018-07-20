@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
-    "test:coverage": "NODE_ENV=test jest --coverage",
-    "test:collectCoverage": "NODE_ENV=test jest --coverage -u && ./node_modules/codecov/bin/codecov -t $code_cov_token"
+    "test:coverage": "NODE_ENV=test jest --coverage -u",
+    "test:collectCoverage": "NODE_ENV=test jest --coverage -u && ./node_modules/codecov/bin/codecov -t $code_cov_token",
+    "clean": "rm -rf ./node_modules"
   },
   "repository": {
     "type": "git",
